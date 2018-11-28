@@ -12,8 +12,11 @@ class pagesController extends Controller
 	}
 	
 	public function getLogout(){
-		Session::put('username', '');
-		return redirect('/')->with('logout','User logout.');
+		if(Session::get('username')!=''){
+			Session::put('username', '');
+			return redirect('/')->with('logout','User logout.');
+		}
+		return redirect('/');
 	}
 	
     public function getHome(){
