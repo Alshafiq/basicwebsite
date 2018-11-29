@@ -1,10 +1,11 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
 	
 
 	<a class="navbar-brand" href="/">
-	
+		Hello
 	@if(session('username')!='')
-	{{session('username')}}
+		{{session('username')}}
 	@else
 		Guest
 	@endif
@@ -23,19 +24,20 @@
 					<a class="nav-link" href="/about">About</a>
 				</li>
 				<li class="{{Request::is('contact') ? 'active':''}}">
-					<a class="nav-link" href="/contact">Form</a>
+					<a class="nav-link" href="/contact">Note</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Extra</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
-						<a class="dropdown-item" href="/messages">Messages</a>
+						<a class="dropdown-item" href="/messages">Notes</a>
 					</div>
 				</li>
 				
-				<button class="btn btn-outline-success my-2 my-sm-0" onclick="location.href='/logout'">Logout</button>
 				
 			</ul>
-		
+			<ul class="navbar-nav mr-right">
+				<button class="btn btn-outline-success my-2 my-sm-0" onclick="location.href='/logout'">Logout</button>
+			</ul>
 	</div>
 </nav>
 

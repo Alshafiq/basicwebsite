@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-<h1>Form</h1>
+<h1>Note</h1>
 {!! Form::open(['url' => 'contact/submit']) !!}
     <div class="form-group">
 		{{Form::label('name', 'Name')}}

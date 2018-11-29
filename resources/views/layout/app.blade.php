@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Laravel</title>
+		<title>Quick Note</title>
 		<link rel="stylesheet" href="/css/app.css">
 		
 		
@@ -12,7 +12,7 @@
 		@include('inc.navbar')
 		
 		<div class="container">
-		
+			<br/>
 			@if(Request::is('/'))
 				@include('inc.showcase')
 			@endif

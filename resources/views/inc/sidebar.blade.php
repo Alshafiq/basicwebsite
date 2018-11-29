@@ -1,9 +1,8 @@
 @section('sidebar')
 <div class="navbar-laravel">
 		
-	<h3>Sidebar</h3>
-	This is sample of sidebar for extra info. This also represent parent sidebar(shared file).
-	
+	<h3>Note</h3>
+	Synonyms:	record, account, entry, item, notation, minute, jotting, inscription, message, communication, letter, missive, epistle, line, email
 </div>
 
 @show

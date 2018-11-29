@@ -11,22 +11,24 @@
 |
 */
 
-Route::get('/login', 'pagesController@getLogin');
+Route::get('/login', 'PagesController@getLogin');
 
-Route::get('/logout', 'pagesController@getLogout');
+Route::get('/logout', 'PagesController@getLogout');
 
-Route::get('/', 'pagesController@getHome');
+Route::get('/', 'PagesController@getHome');
 
-Route::get('/about', 'pagesController@getAbout');
+Route::get('/about', 'PagesController@getAbout');
 
 
 Route::post('/contact/submit', 'MessagesController@submit');
 
-Route::post('/login','loginController@login');
+Route::post('/login','LoginController@login');
 
 Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
 {
 	//only 'admin' can access this
-    Route::get('/contact', 'pagesController@getContact'); 
+    Route::get('/contact', 'PagesController@getContact'); 
 	Route::get('/messages', 'MessagesController@getMessages');
 });
+
+Route::resource('posts','PostsController');

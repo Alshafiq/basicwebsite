@@ -2,10 +2,10 @@
 	<div class="container">
 
 		<h1>
-			Welcome To Laravel
+			Welcome To Quick Note
 		</h1>
 		<p class="lead">
-			Welcome to our website. This site uses Laravel version 5.7.
+			Welcome to Quick Note website. This website uses Laravel V5.7.
 		</p>
 
 	</div>

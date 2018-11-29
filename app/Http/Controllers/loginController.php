@@ -11,7 +11,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesResources;
 use DB;
 use Session;
 
-class loginController extends Controller
+class LoginController extends Controller
 {
     public function login(Request $request)
 	{

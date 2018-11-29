@@ -24,12 +24,12 @@ class MessagesController extends Controller
 		$message->save();
 		
 		//Redirect
-		return redirect('/')->with('success','Message saved.');
+		return redirect('/')->with('success','Note saved.');
 	}
 	
 	public function getMessages(){
-		$messages = Message::all();
-		
+		//$messages = Message::all();
+		$messages = Message::orderBy('ID')->paginate();//paginate is to limit item per page
 		return view('messages')->with('messages',$messages);
 	}
 }

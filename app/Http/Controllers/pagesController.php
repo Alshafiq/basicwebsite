@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Session;
 
-class pagesController extends Controller
+class PagesController extends Controller
 {
 	public function getLogin(){
 		return view('login');
